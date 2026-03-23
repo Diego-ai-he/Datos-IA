@@ -19,7 +19,7 @@ def conectar_y_leer():
         
         # 3. Ejecutar la consulta
         print("Consultando nombres en la tabla Usuarios...")
-        cur.execute("SELECT nombre FROM Usuarios;")
+        cur.execute('SELECT nombre FROM "Usuarios";')
         
         # 4. Obtener y mostrar resultados
         rows = cur.fetchall()
